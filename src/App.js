@@ -1,6 +1,7 @@
 import './App.css';
 import Wolf from './icons/Wolf.jsx';
 import Slider from './components/Slider'
+import Button from './components/Button'
 import { useState } from 'react';
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
           <div className='title-wrapper'>
             <h1>The forest by night</h1><div className="icon-wolf"><Wolf /></div>
           </div>
-          <p>Walking alone in a forest in the middle of the night can be scary. Luckily you can experience it online instead of putting yourself at risk</p>
+          <p>Being alone in a forest in the middle of the night can be scary. Thanks to the internet, you can experience it without putting your life at risk.</p>
         </div>
         <div className="input">
-        <Slider max={50} label="Amount of wolves:" value={amount} onValueChange={v => setAmount(v)}/>
+          <div className="input-item"><Slider min={1} max={50} label="Amount of wolves:" value={amount} onValueChange={v => setAmount(v)}/></div>
+          <div className="input-item"><Button label="Make some noise:" value="Step on a branch"/></div>
         </div>
       </section>
     </div>
