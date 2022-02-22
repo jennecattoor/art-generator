@@ -1,0 +1,33 @@
+.container {
+  margin: 2rem 3rem;
+}
+
+.info-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 38rem;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.icon-wolf {
+  width: 3.5rem;
+  margin: 0 1rem;
+  margin-bottom: -.5rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
