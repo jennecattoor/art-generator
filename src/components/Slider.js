@@ -6,6 +6,7 @@ const Slider = ({ onValueChange, value, max, min, label }) => {
       <p>{label} <span className="text-bold">{value}</span></p>
       <input
         type="range"
+        className="range"
         min={min}
         max={max}
         value={value}
