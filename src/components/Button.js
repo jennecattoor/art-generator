@@ -1,3 +1,5 @@
+import '../styling/Button.css';
+
 const Button = ({label, value}) => {
     return (
         <label>
