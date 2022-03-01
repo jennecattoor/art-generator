@@ -17,9 +17,9 @@ function App() {
 
   const mood = [
     {name: 'Winter night', color: '#000000'},
-    {name: 'Summer night', color: '#5a5a97'},
-    {name: 'Arctic night', color: '#0f0f41'},
-    {name: 'Desert night', color: '#02012c'},
+    {name: 'Summer night', color: '#4B0000'},
+    {name: 'Arctic night', color: '#03004B'},
+    {name: 'Desert night', color: '#4B3500'},
   ]
 
   return (

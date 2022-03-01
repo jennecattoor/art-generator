@@ -1,3 +1,5 @@
+import '../styling/Select.css';
+
 const Select = ({label, value}) => {
 
     const handleChange = (color) => {
