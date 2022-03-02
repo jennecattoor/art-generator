@@ -5,12 +5,11 @@ import * as React from "react"
 
 export default function Art({addNoise, positions, amount}) {
 
-    const test = {positions}.positions.slice(0, amount)
-    console.log(test)
+    const newArray = {positions}.positions.slice(0, amount)
 
   return (
   <svg width="100%" height="610"xmlns="http://www.w3.org/2000/svg">
-    {test.map((eye, index) => <g key={index}className="eyes"><Eyes addNoise={addNoise} transform={eye.position}/></g>)}
+    {newArray.map((eye, index) => <g key={index}className="eyes"><Eyes addNoise={addNoise} transform={eye.position}/></g>)}
   </svg>
   )
 }

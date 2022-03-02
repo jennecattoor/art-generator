@@ -23,26 +23,27 @@ function App() {
   ]
 
   const positions = [
-    {position: 'translate(0, 0)'}, 
-    {position: 'translate(50, 475)'}, 
-    {position: 'translate(150, 100)'}, 
-    {position: 'translate(225, 300)'}, 
-    {position: 'translate(300, 10)'}, 
-    {position: 'translate(400, 200)'}, 
-    {position: 'translate(450, 500)'}, 
-    {position: 'translate(525, 125)'}, 
-    {position: 'translate(600, 375)'}, 
-    {position: 'translate(675, 200)'}, 
-    {position: 'translate(725, 500)'},
     {position: 'translate(800, 75)'},
-    {position: 'translate(900, 300)'},
-    {position: 'translate(975, 475)'},
-    {position: 'translate(1050, 175)'},
-    {position: 'translate(1150, 0)'},
-    {position: 'translate(1225, 250)'},
-    {position: 'translate(1300, 400)'},
     {position: 'translate(1375, 25)'},
-    {position: 'translate(1450, 500)'}
+    {position: 'translate(150, 100)'}, 
+    {position: 'translate(600, 375)'}, 
+    {position: 'translate(300, 10)'}, 
+    {position: 'translate(975, 475)'},
+    {position: 'translate(400, 200)'},
+    {position: 'translate(1300, 400)'},
+    {position: 'translate(450, 500)'}, 
+    {position: 'translate(725, 500)'},
+    {position: 'translate(1050, 175)'},
+    {position: 'translate(0, 0)'}, 
+    {position: 'translate(1225, 250)'},
+    {position: 'translate(900, 300)'},
+    {position: 'translate(1225, 250)'},
+    {position: 'translate(525, 125)'}, 
+    {position: 'translate(1150, 0)'},
+    {position: 'translate(50, 475)'}, 
+    {position: 'translate(675, 200)'}, 
+    {position: 'translate(1450, 500)'},
+    {position: 'translate(225, 300)'}
   ]
 
   return (
