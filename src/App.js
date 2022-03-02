@@ -4,10 +4,13 @@ import Art from './components/Art'
 import Slider from './components/Slider'
 import Button from './components/Button'
 import Select from './components/Select'
+import Color from './components/Color'
 import { useState } from 'react';
 
 function App() {
   const [amount, setAmount] = useState(10);
+
+  const [color, setColor] = useState("#000")
 
   const [addNoise, setAddNoise] = useState(false);
 
@@ -37,7 +40,7 @@ function App() {
     {position: 'translate(0, 0)'}, 
     {position: 'translate(1225, 250)'},
     {position: 'translate(900, 300)'},
-    {position: 'translate(1225, 250)'},
+    {position: 'translate(125, 250)'},
     {position: 'translate(525, 125)'}, 
     {position: 'translate(1150, 0)'},
     {position: 'translate(50, 475)'}, 
@@ -57,12 +60,13 @@ function App() {
         </div>
         <div className="input">
           <div className="input-item"><Slider label="Amount of wolves:" min={1} max={20} value={amount} onValueChange={v => setAmount(v)}/></div>
-          <div className="input-item"><Button label="Make some noise:" value="Step on a branch" onClick={() => handleButtonClick()}/></div>
+          <div className="input-item"><Button label="Make some noise:" value="Toggle noise" onClick={() => handleButtonClick()}/></div>
           <div className="input-item"><Select label="Choose color:" value={mood} /></div>
+          <div className="input-item"><Color label="Choose eye color:" onValueChange={v => setColor(v)}/></div>
         </div>
       </section>
       <section>
-        <Art addNoise={addNoise} positions={positions} amount={amount}/>
+        <Art addNoise={addNoise} positions={positions} amount={amount} color={color}/>
       </section>
     </div>
   );

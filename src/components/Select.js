@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import '../styling/Select.css';
 
 const Select = ({label, value}) => {
@@ -17,6 +18,11 @@ const Select = ({label, value}) => {
             </select>
         </label>
     )
+}
+
+Select.propTypes = {
+    label: PropTypes.string.isRequired,
+    value: PropTypes.array.isRequired
 }
 
 export default Select

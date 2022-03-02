@@ -6,10 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .text {
   max-width: 38rem;
+  margin-bottom: 1rem;
 }
 
 .title-wrapper {
@@ -37,5 +39,6 @@
 }
 
 .input-item {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
+  min-width: 11rem;
 }
