@@ -1,11 +1,7 @@
 import PropTypes from "prop-types";
 import '../styling/Select.css';
 
-const Select = ({label, value}) => {
-
-    const handleChange = (color) => {
-        document.documentElement.style.setProperty('--color-background', color)
-    }
+const Select = ({label, value, onValueChange}) => {
 
     return (
         <label>
@@ -13,7 +9,7 @@ const Select = ({label, value}) => {
             <select
                 className="select"
                 name="night"
-                onChange={(e) => handleChange(e.target.value)}>
+                onChange={(e) => onValueChange(e.target.value)}>
                 {value.map(mood => <option key={mood.name} value={mood.color} >{mood.name}</option>)}
             </select>
         </label>
@@ -22,7 +18,8 @@ const Select = ({label, value}) => {
 
 Select.propTypes = {
     label: PropTypes.string.isRequired,
-    value: PropTypes.array.isRequired
+    value: PropTypes.array.isRequired,
+    onValueChange: PropTypes.func.isRequired
 }
 
 export default Select

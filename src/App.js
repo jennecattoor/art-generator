@@ -18,6 +18,10 @@ function App() {
     setAddNoise(!addNoise)
   }
 
+  const handleColorChange = (color) => {
+    document.documentElement.style.setProperty('--color-background', color)
+  }
+
   const mood = [
     {name: 'Winter night', color: '#000000'},
     {name: 'Summer night', color: '#4B0000'},
@@ -61,7 +65,7 @@ function App() {
         <div className="input">
           <div className="input-item"><Slider label="Amount of wolves:" min={1} max={20} value={amount} onValueChange={v => setAmount(v)}/></div>
           <div className="input-item"><Button label="Make some noise:" value="Toggle noise" onClick={() => handleButtonClick()}/></div>
-          <div className="input-item"><Select label="Choose color:" value={mood} /></div>
+          <div className="input-item"><Select label="Choose color:" value={mood} onValueChange={v => handleColorChange(v)}/></div>
           <div className="input-item"><Color label="Choose eye color:" onValueChange={v => setColor(v)}/></div>
         </div>
       </section>
